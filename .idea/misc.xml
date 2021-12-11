@@ -3,7 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Giovanni/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_calculatrice.xml" value="0.168359375" />
+        <entry key="..\:/Users/Giovanni/AndroidStudioProjects/Demo/app/src/main/res/drawable/circle.xml" value="0.18046875" />
+        <entry key="..\:/Users/Giovanni/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_calculatrice.xml" value="0.25" />
         <entry key="..\:/Users/Giovanni/AndroidStudioProjects/Demo/app/src/main/res/layout/activity_main.xml" value="0.12771739130434784" />
       </map>
     </option>
