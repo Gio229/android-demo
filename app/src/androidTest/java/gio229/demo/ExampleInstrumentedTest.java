@@ -1,4 +1,4 @@
-package Gio229.demo;
+package gio229.demo;
 
 import android.content.Context;
 

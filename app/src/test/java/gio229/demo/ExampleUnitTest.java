@@ -1,4 +1,4 @@
-package Gio229.demo;
+package gio229.demo;
 
 import org.junit.Test;
 
