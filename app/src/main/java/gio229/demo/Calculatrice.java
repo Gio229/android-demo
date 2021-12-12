@@ -60,9 +60,13 @@ public class Calculatrice {
 
         int check = 0;
 
-        if(!userExp.matches("[0-9]")){
+        if(!userExp.contains("0")&& !userExp.contains("1")&& !userExp.contains("2")&& !userExp.contains("3") && !userExp.contains("4") && !userExp.contains("5") && !userExp.contains("6") && !userExp.contains("7") && !userExp.contains("8") && !userExp.contains("9")){
             check = 1 ;
         }
+
+        /*if(!userExp.matches("[0-9]")){
+            check = 1 ;
+        }*/
 
         String[] checker = userExp.split("[\\+|\\*|\\-|/|\\%]");
 
