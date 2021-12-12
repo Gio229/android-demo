@@ -3,6 +3,8 @@ package gio229.demo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import gio229.demo.Calculatrice;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -37,7 +39,7 @@ public class CalculatriceActivity extends AppCompatActivity {
         String leftStr = oldStr.substring(0, cursorPos);
         String rightStr = oldStr.substring(cursorPos);
 
-        if(getString(R.string.display).equals(display.getText().toString())){
+        if(getString(R.string.display).equals(display.getText().toString()) || getString(R.string.er).equals(display.getText().toString()) ){
             display.setText(strToAdd);
             display.setSelection(cursorPos + 1);
         }else{
@@ -112,6 +114,32 @@ public class CalculatriceActivity extends AppCompatActivity {
     }
 
     public void equalsBTN(View view){
+
+        if( display.getText().toString().equals("")  ){
+
+        }else{
+
+            String edit = display.getText().toString() ;
+            boolean checked = Calculatrice.checkEquation( edit );
+
+            if ( checked ){
+
+                double resulted = Calculatrice.calculate(edit);
+
+                String rersultaToString = Calculatrice.displayString(resulted);
+
+                display.setText(rersultaToString);
+
+                display.setSelection(rersultaToString.length());
+
+            }else{
+                display.setText(getString(R.string.er));
+                display.setSelection(getString(R.string.er).length());
+            }
+
+
+        }
+
 
     }
 
